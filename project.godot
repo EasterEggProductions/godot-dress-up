@@ -17,7 +17,7 @@ compatibility/default_parent_skeleton_in_mesh_instance_3d=true
 config/name="EEP DressUp"
 config/description="Skeleton mesh manager for character outfits and accessories."
 run/main_scene="uid://c7m7kcu7yqirx"
-config/features=PackedStringArray("4.6")
+config/features=PackedStringArray("4.7")
 
 [display]
 
