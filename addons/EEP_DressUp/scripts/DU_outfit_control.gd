@@ -1,7 +1,7 @@
 extends Control
 
 
-@export var res_folder : String
+@export var res_folders : Array[String]
 @export var available_area : Control
 @export var worn_area : Control
 
@@ -13,7 +13,8 @@ var created_buttons = []
 
 # Called when the node enters the scene tree for the first time.
 func _ready() -> void:
-	load_resource_dir()
+	for folder in res_folders:
+		load_resource_dir(folder)
 	if dress_up_controller:
 		make_garment_buttons()
 
@@ -47,7 +48,7 @@ func make_garment_buttons():
 		#
 
 
-func load_resource_dir():
+func load_resource_dir(res_folder : String):
 	var dir = DirAccess.open(res_folder)
 	if dir:
 		dir.list_dir_begin()
@@ -66,7 +67,7 @@ func load_resource_dir():
 				all_garments.append(new_res)
 			file_name = dir.get_next()
 	else:
-		print("An error occurred when trying to access the path.")
+		print("An error occurred when trying to access the path '%s'" % res_folder)
 
 
 func clear_buttons():
