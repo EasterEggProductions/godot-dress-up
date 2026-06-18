@@ -2,18 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://xmlk3i3m4ruc"
-path.s3tc="res://.godot/imported/skeleton_SkeletonN.png-cd11ade6d46edb21d03a7d8a24613a5b.s3tc.ctex"
-path.etc2="res://.godot/imported/skeleton_SkeletonN.png-cd11ade6d46edb21d03a7d8a24613a5b.etc2.ctex"
+uid="uid://bef3fx2bfxsm6"
+path.s3tc="res://.godot/imported/godette_godette_backpack.png-e5c48703d52e3c466d5083c86a03dbef.s3tc.ctex"
+path.etc2="res://.godot/imported/godette_godette_backpack.png-e5c48703d52e3c466d5083c86a03dbef.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "d2fc2b0736d8449b82f8a2d780ad52aa"
+}
 
 [deps]
 
-source_file="res://addons/EEP_DressUp/MannyQuinn/skeleton_SkeletonN.png"
-dest_files=["res://.godot/imported/skeleton_SkeletonN.png-cd11ade6d46edb21d03a7d8a24613a5b.s3tc.ctex", "res://.godot/imported/skeleton_SkeletonN.png-cd11ade6d46edb21d03a7d8a24613a5b.etc2.ctex"]
+source_file="res://addons/EEP_DressUp/characters/Godette/godette_godette_backpack.png"
+dest_files=["res://.godot/imported/godette_godette_backpack.png-e5c48703d52e3c466d5083c86a03dbef.s3tc.ctex", "res://.godot/imported/godette_godette_backpack.png-e5c48703d52e3c466d5083c86a03dbef.etc2.ctex"]
 
 [params]
 
@@ -23,12 +26,12 @@ compress/lossy_quality=0.7
 compress/uastc_level=0
 compress/rdo_quality_loss=0.0
 compress/hdr_compression=1
-compress/normal_map=1
+compress/normal_map=0
 compress/channel_pack=0
 mipmaps/generate=true
 mipmaps/limit=-1
-roughness/mode=1
-roughness/src_normal="res://addons/EEP_DressUp/MannyQuinn/skeleton_SkeletonN.png"
+roughness/mode=0
+roughness/src_normal=""
 process/channel_remap/red=0
 process/channel_remap/green=1
 process/channel_remap/blue=2

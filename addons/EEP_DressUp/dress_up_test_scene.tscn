@@ -1,7 +1,7 @@
 [gd_scene format=3 uid="uid://c7m7kcu7yqirx"]
 
 [ext_resource type="Script" uid="uid://cendvqu343aqi" path="res://addons/EEP_DressUp/DresserUpper.gd" id="2_6dr5i"]
-[ext_resource type="Script" path="res://addons/EEP_DressUp/DU_cam_control.gd" id="3_qlpsu"]
+[ext_resource type="Script" uid="uid://dbkfha8vppc8n" path="res://addons/EEP_DressUp/DU_cam_control.gd" id="3_qlpsu"]
 [ext_resource type="Script" uid="uid://bkrmq3ev5rr4r" path="res://addons/EEP_DressUp/scripts/DU_outfit_control.gd" id="15_syior"]
 [ext_resource type="Script" uid="uid://2awnwoprnepu" path="res://addons/EEP_DressUp/scripts/DU_anim_control.gd" id="46_jhhci"]
 

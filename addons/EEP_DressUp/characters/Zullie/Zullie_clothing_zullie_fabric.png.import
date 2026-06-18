@@ -2,18 +2,21 @@
 
 importer="texture"
 type="CompressedTexture2D"
-uid="uid://dr25iwu0xvvfq"
-path.s3tc="res://.godot/imported/skeleton_SkeletonA.png-fc1e4671e67ac9bc480a2465926970de.s3tc.ctex"
-path.etc2="res://.godot/imported/skeleton_SkeletonA.png-fc1e4671e67ac9bc480a2465926970de.etc2.ctex"
+uid="uid://c6s7tjly277ti"
+path.s3tc="res://.godot/imported/Zullie_clothing_zullie_fabric.png-e48eef05d4f9d66d62cc9aadc7252046.s3tc.ctex"
+path.etc2="res://.godot/imported/Zullie_clothing_zullie_fabric.png-e48eef05d4f9d66d62cc9aadc7252046.etc2.ctex"
 metadata={
 "imported_formats": ["s3tc_bptc", "etc2_astc"],
 "vram_texture": true
 }
+generator_parameters={
+"md5": "356b85f6b9685793ebac5645464c61f4"
+}
 
 [deps]
 
-source_file="res://addons/EEP_DressUp/MannyQuinn/skeleton_SkeletonA.png"
-dest_files=["res://.godot/imported/skeleton_SkeletonA.png-fc1e4671e67ac9bc480a2465926970de.s3tc.ctex", "res://.godot/imported/skeleton_SkeletonA.png-fc1e4671e67ac9bc480a2465926970de.etc2.ctex"]
+source_file="res://addons/EEP_DressUp/characters/Zullie/Zullie_clothing_zullie_fabric.png"
+dest_files=["res://.godot/imported/Zullie_clothing_zullie_fabric.png-e48eef05d4f9d66d62cc9aadc7252046.s3tc.ctex", "res://.godot/imported/Zullie_clothing_zullie_fabric.png-e48eef05d4f9d66d62cc9aadc7252046.etc2.ctex"]
 
 [params]
 
