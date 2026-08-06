@@ -1,0 +1,55 @@
+[gd_scene format=3 uid="uid://civx0tuewopnh"]
+
+[ext_resource type="PackedScene" uid="uid://bwi6dx1hi8t3" path="res://addons/EEP_DressUp/MannyQuinn/manny_quinn.glb" id="1_siacg"]
+[ext_resource type="Shader" uid="uid://c4pam5m6cmigv" path="res://mq_flesh.tres" id="2_haikr"]
+[ext_resource type="Texture2D" uid="uid://o0r5mswfmiho" path="res://addons/EEP_DressUp/MannyQuinn/mq_body_shade.png" id="3_m3kek"]
+[ext_resource type="Material" uid="uid://c5d638mtiqyhp" path="res://addons/EEP_DressUp/materials/mq_face_mat.tres" id="4_qs2j3"]
+[ext_resource type="Script" uid="uid://dwxkrb70og030" path="res://tool_facial_movement_testing.gd" id="5_ja88g"]
+
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_23hx2"]
+render_priority = 0
+shader = ExtResource("2_haikr")
+shader_parameter/FleshShade = ExtResource("3_m3kek")
+shader_parameter/SkinCol = Color(0.878431, 0.682353, 0.654902, 1)
+
+[node name="manny_quinn" unique_id=535366104 instance=ExtResource("1_siacg")]
+
+[node name="Skeleton3D" parent="char" parent_id_path=PackedInt32Array(29507058) index="0" unique_id=1583940015]
+bones/2/rotation = Quaternion(-0.049247317, 1.19064715e-07, -5.87074e-09, 0.9987866)
+bones/3/rotation = Quaternion(-0.10987603, -8.589488e-14, -2.6196497e-08, 0.9939453)
+bones/5/rotation = Quaternion(-0.14214689, -1.07267056e-07, 5.778604e-08, 0.9898456)
+bones/7/rotation = Quaternion(-0.45845613, 0.47182938, 0.5426297, 0.5222528)
+bones/8/rotation = Quaternion(-0.022553675, -0.59841496, -0.0060896673, 0.8008456)
+bones/9/rotation = Quaternion(0.012846586, 0.81015635, 0.032593455, 0.5851661)
+bones/10/rotation = Quaternion(-0.058934137, 0.22650978, -0.036535166, 0.9715377)
+bones/15/rotation = Quaternion(0.10495648, 0.83264273, -0.24339607, -0.4862597)
+bones/26/rotation = Quaternion(-0.1651982, 0.8884344, 0.28433833, -0.3202274)
+bones/31/rotation = Quaternion(-0.458456, -0.47182956, -0.5426299, 0.5222525)
+bones/32/rotation = Quaternion(-0.022552097, 0.59841496, 0.0060878396, 0.80084574)
+bones/33/rotation = Quaternion(0.012844534, -0.8101566, -0.032588173, 0.5851661)
+bones/34/rotation = Quaternion(-0.058936387, -0.22650956, 0.036533, 0.9715376)
+bones/55/rotation = Quaternion(0.9890036, -0.027705757, 0.0020874762, 0.14525856)
+bones/56/rotation = Quaternion(0.13326757, -0.004855405, -0.000758881, 0.99106795)
+bones/57/rotation = Quaternion(-0.5658306, 0.014934195, -0.022672188, 0.8240744)
+bones/59/rotation = Quaternion(0.98900366, 0.027705751, -0.002087472, 0.14525813)
+bones/60/rotation = Quaternion(0.13326666, 0.0048554055, 0.00075887545, 0.99106807)
+bones/61/rotation = Quaternion(-0.5658301, -0.014934226, 0.022672178, 0.82407475)
+bones/62/rotation = Quaternion(-5.768832e-08, 0.9612483, -0.27568418, -8.7470045e-07)
+
+[node name="human_flesh" parent="char/Skeleton3D" index="1" unique_id=124318179]
+surface_material_override/0 = SubResource("ShaderMaterial_23hx2")
+surface_material_override/1 = ExtResource("4_qs2j3")
+
+[node name="TOOL Faicial movement testing" type="Node" parent="." index="2" unique_id=1470491848 node_paths=PackedStringArray("mesh")]
+process_mode = 4
+editor_description = "This script modified the material directly. Since it modifies the material, the saved resource is updated and saved constantly while this is running. If you have set defaults that you like on a material, do not use this script with it, or remember to disable it. "
+script = ExtResource("5_ja88g")
+mesh = NodePath("../char/Skeleton3D/human_flesh")
+look_range = 0.03
+move_speed = 20.0
+blink_close_time = 0.02
+blink_open_time = 0.1
+
+[node name="DirectionalLight3D" type="DirectionalLight3D" parent="." index="3" unique_id=2108741325]
+transform = Transform3D(0.79680896, 0.1390935, 0.58800375, -0.5987105, 0.3129983, 0.7372773, -0.081493676, -0.9395133, 0.33267653, 0, 0, 0)
+shadow_enabled = true

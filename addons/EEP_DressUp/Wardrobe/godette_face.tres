@@ -1,5 +1,6 @@
 [gd_resource type="Resource" script_class="Garment" format=4 uid="uid://dordbggjqolii"]
 
+[ext_resource type="Material" uid="uid://c5d638mtiqyhp" path="res://addons/EEP_DressUp/materials/mq_face_mat.tres" id="1_8sib0"]
 [ext_resource type="Texture2D" uid="uid://cvxcpfb0g37r3" path="res://addons/EEP_DressUp/characters/Godette/godette_mq_face.png" id="1_gme4r"]
 [ext_resource type="Script" uid="uid://5mqewow4ah2q" path="res://addons/EEP_DressUp/Resource Definitions/Garment.gd" id="2_8sib0"]
 
@@ -228,3 +229,4 @@ resource_name = "Godette Face"
 script = ExtResource("2_8sib0")
 mesh = SubResource("ArrayMesh_dcesu")
 skin = SubResource("Skin_5uj7d")
+materials = Array[Material]([ExtResource("1_8sib0")])
