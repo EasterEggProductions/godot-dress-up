@@ -20,6 +20,34 @@ func spawn_garment() -> MeshInstance3D:
 		garment.set_surface_override_material(m,  self.materials[m])
 	garment.skin = self.skin
 	garment.name = resource_name
+
+	# Apply special material properties
+	var applied_effects : Dictionary[String,Node]
+	for key in material_override_properties:
+		# Support child nodes to manage effects on the mesh. 
+		if "DU_effect" in key:
+			var effect = key.substr(0, key.find("."))
+			var param = key.substr(key.find(".") + 1)
+			if effect not in applied_effects:
+				var n_effect = DU_effect_bounce.new()
+				applied_effects[key] = n_effect
+				garment.add_child(n_effect)
+			if "." in key: # parse as variable to set
+				var thing : DU_effect_bounce = applied_effects[effect]
+				thing.set(param, material_override_properties[key])
+		else:
+			# normal material param
+			print("Normal Material param")
+			for m in range(mesh.get_surface_count()):
+				var mat = garment.get_active_material(m)
+				if mat is ShaderMaterial:
+					print("Was a shader material")
+					mat.set_shader_parameter(key, material_override_properties[key])
+				else:
+					print("Was not a shader material")
+					#assuming StandardMaterial3D
+					mat.set(key, material_override_properties[key])
+
 	return garment
 
 func set_garment_property(p_name : String, value : Variant):

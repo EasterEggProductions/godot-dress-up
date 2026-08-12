@@ -246,3 +246,6 @@ resource_name = "Godette Hair"
 script = ExtResource("2_8ftnc")
 mesh = SubResource("ArrayMesh_34sbl")
 skin = SubResource("Skin_46n2p")
+material_override_properties = Dictionary[StringName, Variant]({
+&"albedo_color": Color(0.2627451, 0.79607844, 1, 1)
+})

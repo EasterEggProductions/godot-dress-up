@@ -1,35 +1,35 @@
 [gd_resource type="ShaderMaterial" format=3 uid="uid://c5d638mtiqyhp"]
 
 [ext_resource type="Shader" uid="uid://dntc8ws1qlbvn" path="res://addons/EEP_DressUp/shaders/mq_face.gdshader" id="1_jacu2"]
-[ext_resource type="Texture2D" uid="uid://bi8fkvt4d6csr" path="res://addons/EEP_DressUp/MannyQuinn/eye_mask_atlas.png" id="2_o4lmp"]
-[ext_resource type="Texture2D" uid="uid://b562vyy3vhkr0" path="res://addons/EEP_DressUp/MannyQuinn/test_eyebrow.png" id="3_6j7us"]
-[ext_resource type="Texture2D" uid="uid://bvp7br21v30vd" path="res://addons/EEP_DressUp/MannyQuinn/eye_lid_atlas.png" id="4_qtv5c"]
-[ext_resource type="Texture2D" uid="uid://yfb10ns34xrp" path="res://addons/EEP_DressUp/MannyQuinn/mq_eye_pupil.png" id="5_nigwj"]
-[ext_resource type="Texture2D" uid="uid://clg6i4mp2qjot" path="res://addons/EEP_DressUp/MannyQuinn/mq_mouth_atlas_01.png" id="6_wdn2x"]
-[ext_resource type="Texture2D" uid="uid://cyw31ldax4qfm" path="res://addons/EEP_DressUp/MannyQuinn/mq_face_shade.png" id="7_s5y1q"]
+[ext_resource type="Texture2D" uid="uid://bi8fkvt4d6csr" path="res://addons/EEP_DressUp/MannyQuinn/eye_mask_atlas.png" id="2_jacu2"]
+[ext_resource type="Texture2D" uid="uid://b562vyy3vhkr0" path="res://addons/EEP_DressUp/MannyQuinn/test_eyebrow.png" id="3_o4lmp"]
+[ext_resource type="Texture2D" uid="uid://bvp7br21v30vd" path="res://addons/EEP_DressUp/MannyQuinn/eye_lid_atlas.png" id="4_6j7us"]
+[ext_resource type="Texture2D" uid="uid://yfb10ns34xrp" path="res://addons/EEP_DressUp/MannyQuinn/mq_eye_pupil.png" id="5_qtv5c"]
+[ext_resource type="Texture2D" uid="uid://clg6i4mp2qjot" path="res://addons/EEP_DressUp/MannyQuinn/mq_mouth_atlas_01.png" id="6_nigwj"]
+[ext_resource type="Texture2D" uid="uid://cyw31ldax4qfm" path="res://addons/EEP_DressUp/MannyQuinn/mq_face_shade.png" id="7_wdn2x"]
 
 [resource]
 render_priority = 0
 shader = ExtResource("1_jacu2")
 shader_parameter/skin_tone = Color(0.878431, 0.682353, 0.654902, 1)
-shader_parameter/skin_shade = ExtResource("7_s5y1q")
+shader_parameter/skin_shade = ExtResource("7_wdn2x")
 shader_parameter/eye_look = Vector2(0, 0)
-shader_parameter/iris = ExtResource("5_nigwj")
-shader_parameter/eyelashes = ExtResource("4_qtv5c")
-shader_parameter/eye_mask = ExtResource("2_o4lmp")
+shader_parameter/iris = ExtResource("5_qtv5c")
+shader_parameter/eyelashes = ExtResource("4_6j7us")
+shader_parameter/eye_mask = ExtResource("2_jacu2")
 shader_parameter/sclera_col = Color(1, 1, 1, 1)
 shader_parameter/interpupillary_distance = 0.121
 shader_parameter/eye_height = 0.43
 shader_parameter/eye_scale = 6.0
-shader_parameter/iris_scale = 1.15
+shader_parameter/iris_scale = 1.255
 shader_parameter/blink_atlas_width = 2
 shader_parameter/blink_left = 1.0
 shader_parameter/blink_right = 1.0
-shader_parameter/eyebrow = ExtResource("3_6j7us")
+shader_parameter/eyebrow = ExtResource("3_o4lmp")
 shader_parameter/intereyebrow_distance = 0.145
 shader_parameter/eyebrow_height = 0.327
 shader_parameter/eyebrow_scale = 3.65
-shader_parameter/mouth = ExtResource("6_wdn2x")
+shader_parameter/mouth = ExtResource("6_nigwj")
 shader_parameter/mouth_atlas_width = 3
 shader_parameter/mouth_height = 0.67
 shader_parameter/mouth_offset = 0.5

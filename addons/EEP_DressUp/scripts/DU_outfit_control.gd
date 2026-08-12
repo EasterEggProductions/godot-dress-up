@@ -26,7 +26,9 @@ func _process(_delta: float) -> void:
 
 func make_garment_buttons():
 	clear_buttons()
+	print(all_garments)
 	for garment in all_garments:
+		print(garment)
 		var new_butt = Button.new()
 		new_butt.text = garment.resource_name
 		created_buttons.append(new_butt)
