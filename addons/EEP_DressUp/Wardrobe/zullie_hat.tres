@@ -2,16 +2,14 @@
 
 [ext_resource type="Texture2D" uid="uid://c6s7tjly277ti" path="res://addons/EEP_DressUp/characters/Zullie/Zullie_clothing_zullie_fabric.png" id="1_3kaus"]
 [ext_resource type="Shader" uid="uid://diskg743c5fvk" path="res://addons/EEP_DressUp/shaders/clothing_displacement_simple.gdshader" id="1_uoa8x"]
-[ext_resource type="Texture2D" uid="uid://bwyvtc0yytx3k" path="res://test_z_skirt_zullie_fabric.png" id="2_e4hfn"]
 [ext_resource type="Script" uid="uid://5mqewow4ah2q" path="res://addons/EEP_DressUp/Resource Definitions/Garment.gd" id="3_rt7bl"]
 
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_c3w34"]
 render_priority = 0
 shader = ExtResource("1_uoa8x")
 shader_parameter/offset_array_square_dimension = 8.0
-shader_parameter/noise_strength = 1.0
 shader_parameter/displacement_strength = 1.0
-shader_parameter/albedo = ExtResource("2_e4hfn")
+shader_parameter/albedo = ExtResource("1_3kaus")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_drh0i"]
 resource_name = "zullie_dress"

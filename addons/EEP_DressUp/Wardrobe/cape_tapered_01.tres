@@ -1,6 +1,6 @@
 [gd_resource type="Resource" script_class="Garment" format=4 uid="uid://dywiyo7uuvwo3"]
 
-[ext_resource type="Shader" uid="uid://dwyw5lswcag8s" path="res://test_clothing_displacement.tres" id="1_yfvv3"]
+[ext_resource type="Shader" uid="uid://diskg743c5fvk" path="res://addons/EEP_DressUp/shaders/clothing_displacement_simple.gdshader" id="1_yfvv3"]
 [ext_resource type="Texture2D" uid="uid://c3vthaai1qarq" path="res://addons/EEP_DressUp/MannyQuinn/cape_tapered_01_cape.png" id="2_i50kh"]
 [ext_resource type="Script" uid="uid://5mqewow4ah2q" path="res://addons/EEP_DressUp/Resource Definitions/Garment.gd" id="3_fkxp3"]
 
@@ -8,7 +8,7 @@
 render_priority = 0
 shader = ExtResource("1_yfvv3")
 shader_parameter/offset_array_square_dimension = 8.0
-shader_parameter/FloatParameter = 1.0
+shader_parameter/displacement_strength = 1.0
 shader_parameter/albedo = ExtResource("2_i50kh")
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_isc3k"]

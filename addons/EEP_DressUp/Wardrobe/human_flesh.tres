@@ -1,17 +1,16 @@
 [gd_resource type="Resource" script_class="Garment" format=4 uid="uid://b330276a4apdk"]
 
 [ext_resource type="Script" uid="uid://5mqewow4ah2q" path="res://addons/EEP_DressUp/Resource Definitions/Garment.gd" id="1_x87nv"]
-[ext_resource type="Shader" uid="uid://c4pam5m6cmigv" path="res://mq_flesh.tres" id="1_xa0lw"]
-[ext_resource type="Texture2D" uid="uid://o0r5mswfmiho" path="res://addons/EEP_DressUp/MannyQuinn/mq_body_shade.png" id="2_1hylp"]
 [ext_resource type="Material" uid="uid://c5d638mtiqyhp" path="res://addons/EEP_DressUp/materials/mq_face_mat.tres" id="3_o0c5a"]
 [ext_resource type="Texture2D" uid="uid://tkwx7b7ion73" path="res://addons/EEP_DressUp/MannyQuinn/manny_quinn_mq_body.png" id="4_xav3p"]
 [ext_resource type="Texture2D" uid="uid://d24myyhfbu6d4" path="res://addons/EEP_DressUp/MannyQuinn/manny_quinn_mq_face.png" id="5_3vr2s"]
 
-[sub_resource type="ShaderMaterial" id="ShaderMaterial_23hx2"]
-render_priority = 0
-shader = ExtResource("1_xa0lw")
-shader_parameter/FleshShade = ExtResource("2_1hylp")
-shader_parameter/SkinCol = Color(0.878431, 0.682353, 0.654902, 1)
+[sub_resource type="StandardMaterial3D" id="StandardMaterial3D_y1xnd"]
+resource_name = "mq_baseSkin"
+cull_mode = 2
+albedo_texture = ExtResource("4_xav3p")
+roughness = 0.5
+metadata/_gltf_primary_texture_coord = 0
 
 [sub_resource type="StandardMaterial3D" id="StandardMaterial3D_vns7l"]
 resource_name = "mq_baseSkin"
@@ -264,5 +263,5 @@ resource_name = "human flesh"
 script = ExtResource("1_x87nv")
 mesh = SubResource("ArrayMesh_c4day")
 skin = SubResource("Skin_vahow")
-materials = Array[Material]([SubResource("ShaderMaterial_23hx2"), ExtResource("3_o0c5a")])
+materials = Array[Material]([SubResource("StandardMaterial3D_y1xnd"), ExtResource("3_o0c5a")])
 metadata/_custom_type_script = "uid://5mqewow4ah2q"
